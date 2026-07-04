@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/WebcamPanel.tsx","./src/components/YouTubePlayer.tsx","./src/lib/applyGestureCommand.ts","./src/lib/useGestureSocket.ts","./src/lib/youtubeTypes.ts","./src/lib/youtubeUtils.ts"],"version":"5.9.3"}

@@ -1,0 +1,72 @@
+/* Phase 1: bare-bones styling only. Phase 2 will replace this with the
+   dark/glassmorphism aesthetic once gesture functionality is confirmed
+   working end-to-end. */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f2f2f2;
+  color: #111;
+}
+
+.app-layout {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  align-items: flex-start;
+}
+
+.left-panel {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.right-panel {
+  flex: 1;
+  min-width: 0;
+}
+
+.webcam-panel video {
+  width: 100%;
+  background: #000;
+  border: 1px solid #999;
+}
+
+.status-line {
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.status-line.connected { color: green; }
+.status-line.disconnected { color: red; }
+.status-line.reconnecting { color: orange; }
+
+.url-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.url-form input {
+  flex: 1;
+  padding: 6px;
+}
+
+.player-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.gesture-feedback {
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid #333;
+  font-size: 13px;
+  min-height: 18px;
+}
+
+.error-text {
+  color: #b00020;
+  font-size: 13px;
+}
